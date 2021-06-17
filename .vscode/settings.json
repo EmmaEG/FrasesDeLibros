@@ -1,0 +1,10 @@
+{
+    "typescript.preferences.quoteStyle": "single",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.jsxBracketSameLine": false,
+    // cambiar las comillas dobles por simples,
+    "prettier.singleQuote": true,
+    // agregar espacios al momento de importar una dependencia entre llaves
+    "prettier.bracketSpacing": true,
+}
