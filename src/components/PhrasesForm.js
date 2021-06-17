@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { toast } from 'react-toastify';
 
 const PhrasesForm = (props) => {
   const initValues = {
