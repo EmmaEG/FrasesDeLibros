@@ -44,7 +44,7 @@ const PhrasesForm = (props) => {
   }, [props.currentId]);
 
   return (
-    <form onSubmit={handleSubmit} className='card card-body border-info'>
+    <form onSubmit={handleSubmit} className='card card-body'>
       <div>
         <h1 className='text-center'>Guardar Frases</h1>
         <hr className='mb-5' />

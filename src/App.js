@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 
 import Phrases from './components/Phrases';
 import { ToastContainer } from 'react-toastify';

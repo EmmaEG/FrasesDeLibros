@@ -3,6 +3,9 @@ import { db } from '../firebase';
 import { toast } from 'react-toastify';
 
 import PhrasesForm from './PhrasesForm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit } from '@fortawesome/free-regular-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-regular-svg-icons';
 
 const Phrases = () => {
   //definimos el estado inicial de la app un arreglo vacío
@@ -75,27 +78,28 @@ const Phrases = () => {
         {phrases.map((phrase) => (
           <div className='card mt-3' key={phrase.id}>
             <div className='card-body'>
-              <div className='d-flex justify-content-between mb-4'>
+              <div className='d-flex justify-content-between'>
                 <h4>{phrase.title}</h4>
                 <div>
-                  <button
+                  <i
                     type='button'
                     className='btn btn-warning'
                     onClick={() => {
                       setCurrentId(phrase.id);
                     }}
                   >
-                    Edit
-                  </button>
-                  <button
+                    <FontAwesomeIcon icon={faEdit} />
+                  </i>
+
+                  <i
                     type='button'
                     className='btn btn-danger m-1'
                     onClick={() => {
                       onDeletePhrase(phrase.id);
                     }}
                   >
-                    Delete
-                  </button>
+                    <FontAwesomeIcon icon={faTrashAlt} />
+                  </i>
                 </div>
               </div>
               <p>{phrase.description}</p>
