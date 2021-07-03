@@ -1,3 +1,11 @@
+# React & Firebase CRUD
+
+Este pequeño proyecto no permite conectar nuestra app con los servicios de Firebase.
+Es un CRUD para guardar frases de lirbos.
+El framework para JS utilizado fue ReactJS.
+EL framewok utiizado para CSS fue Bootstrap.
+Para las alertas que se muestran en la app usé Toast.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
